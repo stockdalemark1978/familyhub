@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TodosController extends Controller
+class ListController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class TodosController extends Controller
      */
     public function index()
     {
-        //
+        return view('lists.index');
     }
 
     /**
@@ -23,7 +23,7 @@ class TodosController extends Controller
      */
     public function create()
     {
-        //
+        return view('lists.create');
     }
 
     /**

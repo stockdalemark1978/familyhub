@@ -18,3 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('/albums', 'AlbumController');
+// Route::post('/albums/store', 'AlbumController@store');
+
+Route::resource('/lists', 'ListController');

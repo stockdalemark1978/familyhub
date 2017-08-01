@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PhotosController extends Controller
+class AlbumController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class PhotosController extends Controller
      */
     public function index()
     {
-        //
+        return view('albums.index');
     }
 
     /**
@@ -23,7 +23,7 @@ class PhotosController extends Controller
      */
     public function create()
     {
-        //
+        return view('albums.create');
     }
 
     /**
@@ -34,7 +34,7 @@ class PhotosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return;
     }
 
     /**
