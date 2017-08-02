@@ -18,6 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/albums/{id}', 'AlbumController@show');
 Route::post('/albums/store', 'AlbumController@store');
 Route::resource('/albums', 'AlbumController');
 // Route::get('/albums', 'AlbumController@index');

@@ -13,10 +13,11 @@
         {{Form::textarea('description','',['placeholder' => 'Album Description', 'class' => 'form-control'])}}
         </div>
         <div class="form-group">
+        <h5>Add Album Cover Photo</h5>
         {{Form::file('cover_image')}}
         </div>
         
-        {{Form::submit('submit', ['class' => 'btn btn-primary'])}}
+        {{Form::submit('Create Album', ['class' => 'btn btn-primary'])}}
         
     </form>    
     {!! Form::close() !!}

@@ -15,7 +15,9 @@ class AlbumController extends Controller
      */
     public function index()
     {
-        return view('albums.index');
+        $albums = Album::with('Photos')->get();
+        
+        return view('albums.index')->with('albums', $albums);
     }
 
     /**
@@ -50,6 +52,8 @@ class AlbumController extends Controller
         //attach random number to file name to make sure unique
         $newFilename = $randomNum.$filename;
 
+        $path = $request->file('cover_image')->storeAs('public/album_covers', $newFilename);
+
         //create a new album
         $album = new Album;
         $album->name = $request->input('name');
@@ -69,7 +73,8 @@ class AlbumController extends Controller
      */
     public function show($id)
     {
-        //
+        $album = Album::with('Photos')->find($id);
+        return view('albums.show')->with('album', $album);
     }
 
     /**
