@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Album;
+use Session;
 
 class AlbumController extends Controller
 {
@@ -34,7 +36,29 @@ class AlbumController extends Controller
      */
     public function store(Request $request)
     {
-        return 123;
+        $this->validate($request, [
+            'name' => 'required',
+            'cover_image' => 'image|max:1999'
+        ]);
+
+        // Get the name of the file uploaded
+        $filename = $request->file('cover_image')->getClientOriginalName();
+
+        //create a random number
+        $randomNum = rand();
+
+        //attach random number to file name to make sure unique
+        $newFilename = $randomNum.$filename;
+
+        //create a new album
+        $album = new Album;
+        $album->name = $request->input('name');
+        $album->description = $request->input('description');
+        $album->cover_image = $newFilename;
+
+        $album->save();
+
+        return redirect('/albums')->with('success', 'Album Created');       
     }
 
     /**
