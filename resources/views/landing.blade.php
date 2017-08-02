@@ -58,11 +58,17 @@
     </div>
 
 
+<section id="why">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Why Family Hub?</h2>
+            </div>
+        </div>
+    </div>
+</section>
 
-
-
-    <section id="why">
-        <h2>Why Family Hub?</h2>
+    <section id="calendar">
         <div class="container">
             <div class="row">
                 <div class="col-sm-8">
@@ -87,6 +93,22 @@
                     
                     <h3>Share Photos</h3>
                     <p>Keep your family on the same page with a family calendar. Now everyone in the family will know when Jimmy's soccer game is, when mom's hair day is, and when little Susie next door has her birthday party.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lists">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h3>Family Lists</h3>
+                    <p>Grocery lists, chores lists, shopping lists...every family uses lists. Now you can make sure everyone in the family knows what needs to be done.</p>
+                    
+                </div>
+                <div class="col-sm-4">
+                    <img src="../img/list.jpg" width="200px" alt="">
+                    
                 </div>
             </div>
         </div>

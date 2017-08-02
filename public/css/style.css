@@ -38,15 +38,25 @@ nav.navbar-inverse {
     color: white;
 }
 
+.navbar-default{
+    background: #48ab43;
+}
+
+
 h2 {
     text-align: center;
     font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0 0 60px;
+    margin: 0px;
 }
 
 #why {
+    margin: 0px;
+    padding: 25px 0px; 
+    background: #c73733;
+}
+#calendar {
     margin: 0px;
     padding: 50px 0px;
     background: #ddfffd;
@@ -55,6 +65,15 @@ h2 {
     margin: 0px;
     padding: 50px 0px;
     background: #48ab43;
+}
+#lists {
+    margin: 0px;
+    padding: 50px 0px;
+    background: #ddfffd;
+}
+
+#app-navbar-collapse {
+    background: #48ab43 !important;
 }
 
 
