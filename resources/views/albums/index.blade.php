@@ -12,14 +12,14 @@
           @if($i == $colcount)
              <div class="col-sm-4">
                <a href="/albums/{{$album->id}}">
-                  <img class="img-thumbnail" src="storage/album_covers/{{$album->cover_image}}" alt="{{$album->name}}">
+                  <img class="img-thumbnail" src="storage/album_covers/{{$album->cover_image}}" alt="{{$album->name}}" width="250" height="250">
                 </a>
                
                <h4>{{$album->name}}</h4>
           @else
             <div class="col-sm-4">
               <a href="/albums/{{$album->id}}">
-                <img class="img-thumbnail" src="storage/album_covers/{{$album->cover_image}}" alt="{{$album->name}}">
+                <img class="img-thumbnail" src="storage/album_covers/{{$album->cover_image}}" alt="{{$album->name}}" width="250" height="250">
               </a>
               
               <h4>{{$album->name}}</h4>
