@@ -19,16 +19,19 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/albums/{id}', 'AlbumController@show');
-Route::post('/albums/store', 'AlbumController@store');
-Route::resource('/albums', 'AlbumController');
 
-Route::get('/photos/create/{id}', 'PhotoController@create');
-Route::get('/photos/{id}', 'PhotoController@show');
-Route::delete('/photos/{id}', 'PhotoController@destroy');
-Route::post('/photos/store', 'PhotoController@store');
-// Route::get('/albums', 'AlbumController@index');
-// Route::get('/albums/create', 'AlbumController@create');
-// Route::post('/albums/store', 'AlbumController@store');
 
 Route::resource('/lists', 'ListController');
+
+
+Route::get('/', 'AlbumController@index');
+Route::get('/albums', 'AlbumController@index');
+Route::get('/albums/create', 'AlbumController@create');
+Route::get('/albums/{id}', 'AlbumController@show');
+Route::post('/albums/store', 'AlbumController@store');
+
+Route::get('/photos/create/{id}', 'PhotoController@create');
+Route::post('/photos/store', 'PhotoController@store');
+Route::get('/photos/{id}', 'PhotoController@show');
+Route::delete('/photos/{id}', 'PhotoController@destroy');
+
