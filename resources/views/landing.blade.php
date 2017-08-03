@@ -58,7 +58,7 @@
     </div>
 
 
-<section id="why">
+<!-- <section id="why">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -66,7 +66,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
     <section id="calendar">
         <div class="container">

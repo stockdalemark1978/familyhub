@@ -24,7 +24,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/lists', 'ListController');
 
 
-Route::get('/', 'AlbumController@index');
+
 Route::get('/albums', 'AlbumController@index');
 Route::get('/albums/create', 'AlbumController@create');
 Route::get('/albums/{id}', 'AlbumController@show');
