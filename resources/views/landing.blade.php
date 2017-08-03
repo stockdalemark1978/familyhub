@@ -23,6 +23,7 @@
 
 <body>
     <nav class="navbar navbar-fixed-top">
+         <a class="navbar-brand" href="index.html"><img src="../img/Familyhubnavbarlogo.png" alt="logo" width="150"></a> 
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -31,7 +32,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                <!-- <a class="navbar-brand" href="index.html">FamilyHub</a> -->
+                
             </div>
 
             <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -49,11 +50,12 @@
         </div>
     </nav>
 
+
     <div class="cover">
         <div class="cover-text">
-            <h1>Welcome to FamilyHub.</h1>
+            <h1>Welcome to <img src="../img/Familyhublogo2.png" alt="logo"></h1>
             <p class="lead">Keeping families organized and on the same page .</p>
-            <a href="#why-us" role="button" class="btn btn-danger btn-lg">Get Started!.</a>
+            <a href="{{ route('register') }}" role="button" class="btn btn-danger btn-lg">Get Started!</a>
         </div>
     </div>
 

@@ -5,7 +5,7 @@ body,
 }
 
 .cover {
-    background: url('../img/familyhub1.jpg') top left no-repeat;
+    background: url('../img/Familyhubheader2.png') top left no-repeat;
     background-size: cover;
     display: table;
     width: 100%;
@@ -18,12 +18,14 @@ body,
     color: black;
     display: table-cell;
     vertical-align: middle;
+     z-index:10;
 }
 
 .cover-text h1 {
     margin: 0;
     font-size: 70px;
     letter-spacing: -3px;
+   
 }
 
 nav.navbar-inverse {
@@ -40,6 +42,15 @@ nav.navbar-inverse {
 
 .navbar-default{
     background: #48ab43;
+}
+
+.logo {
+   position:absolute;
+   width:auto;
+   height:auto;
+   z-index:1;
+   left: 75px;
+   top: 75px;
 }
 
 
