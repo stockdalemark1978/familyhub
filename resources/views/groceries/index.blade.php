@@ -6,13 +6,13 @@
 
 <div class="row">
     <div class="col-sm-4">
-  <form style="margin-bottom: 20px;" method="get" action="/groceries/create">
+  <!-- <form style="margin-bottom: 20px;" method="get" action="/groceries/create">
     <button class="btn btn-success btn-xs" type="submit">Add</button>
-  </form>
+  </form> -->
 
 <div class="panel panel-default">
     <div class="panel-heading clearfix">
-      <h3 class="panel-title pull-left">Dad's Grocery List</h3>
+      <h3 class="panel-title pull-left">Grocery List</h3>
     </div>
     <div class="panel-body">
       
@@ -45,9 +45,9 @@
         {{ method_field('DELETE')}}
         <button class="btn btn-danger btn-xs pull-right" type="submit">Delete</button>
       </form>
-      <form method="get" action="[[ grocery.action ]]">
+      <!-- <form method="get" action="[[ grocery.action ]]">
         <button style="margin-right: 10px;" class="btn btn-warning btn-xs pull-right" type="submit">Edit</button>
-      </form>
+      </form> -->
     </div>
     <!-- <div class="panel-body">
       [[ grocery.content ]]
