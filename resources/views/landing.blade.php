@@ -18,33 +18,39 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
+     <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://use.fontawesome.com/00ed1df00a.js"></script>
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-fixed-top">
-         <a class="navbar-brand" href="index.html"><img src="../img/Familyhubnavbarlogo.png" alt="logo" width="150"></a> 
+    <nav class="navbar-inverse navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated fadeInDownBig" href="#"><img src="../img/Familyhubnavbarlogo.png" alt="logo" width="150" id="navlogo"></a>
             </div>
-
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                @if (Route::has('login'))
-                <ul class="nav navbar-nav navbar-right">
-                    @auth
+            <div id="navbar" class="collapse navbar-collapse">
+            <!-- <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul> -->
+            @if (Route::has('login'))
+            <ul class="nav navbar-nav navbar-right">
+                @if (Auth::check())
                     <li><a href="{{ url('/home') }}">Home</a></li>
-                    @else
-                    <li><a href="{{ route('login') }}">Login</a></li>
-                    <li><a href="{{ route('register') }}">Register</a></li>
-                    @endauth
-                </ul>
+                @else
+                    <li><a href="{{ route('login') }}">Login <i class="fa fa-user"></i></a></li>
+                    <li><a href="{{ route('register') }}">Register <i class="fa fa-user-plus"></i></a></li>
+                @endauth
+            </ul>
                 @endif
             </div>
         </div>
@@ -78,7 +84,7 @@
                     <p>Keep your family on the same page with a family calendar. Now everyone in the family will know when Jimmy's soccer game is, when mom's hair day is, and when little Susie next door has her birthday party.</p>
                 </div>
                 <div class="col-sm-4">
-                    <img src="../img/calendar.jpg" width="200px" alt="">
+                    <img src="../img/calendar.jpg" width="300px" alt="">
                 </div>
             </div>
         </div>
@@ -89,7 +95,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
-                    <img src="../img/photos.jpg" width="200px" alt="">
+                    <img src="../img/photos.jpg" width="300px" alt="">
                 </div>
                 <div class="col-sm-8">
                     
@@ -109,7 +115,7 @@
                     
                 </div>
                 <div class="col-sm-4">
-                    <img src="../img/list.jpg" width="200px" alt="">
+                    <img src="../img/list.jpg" width="300px" alt="">
                     
                 </div>
             </div>

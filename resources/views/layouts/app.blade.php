@@ -31,7 +31,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        <img src="../img/Familyhubnavbarlogo.png" alt="logo" width="150" id="navlogo"></a>
                     </a>
                 </div>
 
