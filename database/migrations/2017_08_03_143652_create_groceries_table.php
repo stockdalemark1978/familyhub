@@ -16,7 +16,7 @@ class CreateGroceriesTable extends Migration
         Schema::create('groceries', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->boolean('completed')->default(0);
+            // $table->boolean('completed')->default(0)->nullable();
             $table->timestamps();
         });
     }
