@@ -42,3 +42,9 @@ Route::resource('/groceries', 'GroceryController');
 // Route::get('/albums/create', 'AlbumController@create');
 // Route::get('/albums/{id}', 'AlbumController@show');
 // Route::post('/albums/store', 'AlbumController@store');
+
+Route::get('/chores', 'ChoreController@index');
+Route::get('/chores/create', 'ChoreController@create');
+Route::resource('/chores', 'ChoreController');
+
+Route::get('/calendars', 'CalendarController@calendar');

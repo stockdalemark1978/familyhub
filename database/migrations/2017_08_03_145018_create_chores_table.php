@@ -17,7 +17,7 @@ class CreateChoresTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->text('description')->nullable();
-            $table->boolean('completed')->default(0);
+            // $table->boolean('completed')->default(0);
             $table->timestamps();
         });
     }
