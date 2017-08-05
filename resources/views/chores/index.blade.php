@@ -6,21 +6,21 @@
 
 <div class="row">
     <div class="col-sm-4" ng-repeat="user in users">
-  <!-- <form style="margin-bottom: 20px;" method="get" action="/groceries/create">
+  <!-- <form style="margin-bottom: 20px;" method="get" action="/chores/create">
     <button class="btn btn-success btn-xs" type="submit">Add</button>
   </form> -->
 
 <div class="panel panel-default">
     <div class="panel-heading clearfix">
-      <h3 class="panel-title pull-left">Grocery List</h3>
+      <h3 class="panel-title pull-left">Chore List</h3>
     </div>
     <div class="panel-body">
       
-      <form method="post" action="/groceries">
+      <form method="post" action="/chores">
         {{ csrf_field() }}
         <div class="form-group">
           <label for="name">Name</label>
-          <input ng-model="groceryName" type="text" class="form-control" id="name" name="name" placeholder="Grocery Item">
+          <input ng-model="choreName" type="text" class="form-control" id="name" name="name" placeholder="chore Item">
         </div>
         <!-- <div class="form-group">
           <label for="content">Idea</label>
@@ -30,27 +30,27 @@
           <option ng-repeat="priority in priorities" value="[[ priority.id ]]">[[ priority.name]]</option>
         </select> -->
 
-        <button type="submit" class="btn btn-success btn-xs"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+        <button type="submit" class="btn btn-success btn-xs">Create</button>
       </form>
 
     </div>
   </div>
 
 
-  <div class="panel panel-default" ng-repeat="grocery in groceries">
+  <div class="panel panel-default" ng-repeat="chore in chores">
     <div class="panel-heading clearfix">
-        <h3 class="panel-title pull-left">[[ grocery.name ]]</h3>
-        <form method="post" action="[[ grocery.action ]]">
+        <h3 class="panel-title pull-left">[[ chore.name ]]</h3>
+        <form method="post" action="[[ chore.action ]]">
             {{ csrf_field() }}
             {{ method_field('DELETE')}}
             <button class="btn btn-danger btn-xs pull-right" type="submit">Delete</button>
         </form>
-        <!-- <form method="get" action="[[ grocery.action ]]">
+        <!-- <form method="get" action="[[ chore.action ]]">
             <button style="margin-right: 10px;" class="btn btn-warning btn-xs pull-right" type="submit">Edit</button>
         </form>  -->
         </div>
         <!-- <div class="panel-body">
-        [[ grocery.content ]]
+        [[ chore.content ]]
         <br />
         </div> -->
   </div>
@@ -65,7 +65,7 @@
 <script>
   function Controller($scope, $location) {
 
-    $scope.groceries = {!! $groceries !!};
+    $scope.chores = {!! $chores !!};
     $scope.users = {!! $users !!};
 
    

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Chore;
 
 class ChoreController extends Controller
 {
@@ -13,7 +14,12 @@ class ChoreController extends Controller
      */
     public function index()
     {
-        //
+        $users = \App\User::all();
+            $chores = \App\Chore::all();
+            foreach ($chores as $chore) {
+                $chore['action'] = '/chores/' . $chore['id'];
+            }
+            return view('chores.index', compact('chores', 'users'));
     }
 
     /**
@@ -23,7 +29,7 @@ class ChoreController extends Controller
      */
     public function create()
     {
-        //
+        return view('chores.create');
     }
 
     /**
@@ -34,7 +40,12 @@ class ChoreController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $chore = new \App\Chore;
+        $chore['name'] = $request->name;
+        // $grocery['user_id'] = $request->id;
+        // $grocery['completed'] = $request->completed;
+        $chore->save();
+        return redirect('/chores');
     }
 
     /**

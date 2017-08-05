@@ -3,28 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Grocery;
-use App\User;
-use Session;
+use MaddHatter\LaravelFullcalendar\Facades\Calendar;
 
-class GroceryController extends Controller
+class CalendarController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
-   
     public function index()
     {
-            $users = \App\User::all();
-            $groceries = \App\Grocery::all();
-            foreach ($groceries as $grocery) {
-                $grocery['action'] = '/groceries/' . $grocery['id'];
-            }
-            return view('groceries.index', compact('groceries', 'users'));
-
+        //
     }
 
     /**
@@ -34,8 +24,7 @@ class GroceryController extends Controller
      */
     public function create()
     {
-        
-        return view('groceries.create');
+        //
     }
 
     /**
@@ -46,13 +35,7 @@ class GroceryController extends Controller
      */
     public function store(Request $request)
     {
-        $grocery = new \App\Grocery;
-        $grocery['name'] = $request->name;
-        // $grocery['user_id'] = $request->id;
-        // $grocery['completed'] = $request->completed;
-        $grocery->save();
-
-        return redirect('/groceries');
+        //
     }
 
     /**
@@ -63,8 +46,7 @@ class GroceryController extends Controller
      */
     public function show($id)
     {
-         $grocery = \App\Grocery::find($id);
-        return view('groceries.show', compact('grocery'));
+        //
     }
 
     /**
@@ -98,11 +80,29 @@ class GroceryController extends Controller
      */
     public function destroy($id)
     {
-        $grocery = \App\Grocery::find($id);
-        $grocery->delete();
-        return redirect('/groceries');
+        //
     }
 
+    public function calendar() {
+        // $LoggedInUser = Auth::user();
 
-   
+        $events = [];
+
+        $events[] = \Calendar::event(
+            "Event one",
+            true,
+            '2017-01-02T0900',
+            '2017-01-06T0900',
+            0
+        );
+        $calendar = \Calendar::addEvents($events)
+                ->setOptions([
+                    'firstDay' => 1
+                ])->setCallbacks([
+
+                ]);
+
+        return view('calendar.index', array('calendar'=>$calendar));
+
+    }
 }
