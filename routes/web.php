@@ -50,6 +50,9 @@ Route::resource('/chores', 'ChoreController');
 Route::get('/calendars', 'CalendarController@calendar');
 
 Route::get('/contacts', 'ContactController@index');
-// Route::resource('contacts', 'ContactController');
+// Route::resource('/contacts', 'ContactController');
 Route::get('/contacts/createcontact', 'ContactController@create');
 Route::post('/contacts/store', 'ContactController@store');
+Route::get('/contacts/{contacts}/edit', 'ContactController@edit');
+Route::put('/contacts/{contacts}/edit', 'ContactController@update');
+Route::delete('/contacts/{contact}', 'ContactController@destroy');

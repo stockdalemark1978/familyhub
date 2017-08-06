@@ -15,6 +15,7 @@ class ContactController extends Controller
     {
         // $user_id = auth()->user()->id;
         $contacts = \App\Contact::all();
+        $contacts = Contact::orderBy('name', 'asc')->get();
         return view('contacts.index')->with('contacts', $contacts);;
     }
 
@@ -37,7 +38,26 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        return redirect('/contacts/createcontact');
+        //validate name entry on contact form
+        $this->validate($request, [
+            'name' => 'required',
+            
+        ]);
+
+        //create contact
+        $contact = new Contact;
+        $contact->name = $request->input('name');
+        $contact->email = $request->input('email');
+        $contact->phone = $request->input('phone');
+        $contact->address = $request->input('address');
+        $contact->notes = $request->input('notes');
+        // if I want it to attach to particular user
+        // $contact->user_id = auth()->user()->id;
+        
+
+        $contact->save();
+
+        return redirect('/contacts')->with('success', 'Contact Added');
     }
 
     /**
@@ -59,7 +79,8 @@ class ContactController extends Controller
      */
     public function edit($id)
     {
-        //
+        $contact = Contact::find($id);
+        return view ('contacts.editcontact')->with('contact', $contact);
     }
 
     /**
@@ -71,7 +92,26 @@ class ContactController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //validate name entry on contact form
+        $this->validate($request, [
+            'name' => 'required',
+            
+        ]);
+
+        //update contact
+        $contact = Contact::find($id);
+        $contact->name = $request->input('name');
+        $contact->email = $request->input('email');
+        $contact->phone = $request->input('phone');
+        $contact->address = $request->input('address');
+        $contact->notes = $request->input('notes');
+        // if I want it to attach to particular user
+        // $contact->user_id = auth()->user()->id;
+        
+
+        $contact->save();
+
+        return redirect('/contacts')->with('success', 'Contact Updated');
     }
 
     /**
@@ -82,6 +122,10 @@ class ContactController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $contact = Contact::find($id);
+        $contact->delete();
+
+        return redirect('/contacts')->with('success', 'Contact Deleted');
+
     }
 }
