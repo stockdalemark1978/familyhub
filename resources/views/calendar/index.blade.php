@@ -1,15 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-        <div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet">
+        <div >
     
+     <iframe src="https://calendar.google.com/calendar/embed?src=4r1q6q14p286lta0ff39om9too%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> 
     
-
-        {!! $calendar->calendar() !!}
-        {!! $calendar->script() !!}
+<!-- 
+         {!! $calendar->calendar() !!}
+        {!! $calendar->script() !!}  -->
         </div>
+
+        
 @endsection

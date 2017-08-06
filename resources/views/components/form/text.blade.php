@@ -1,6 +1,6 @@
- <label for=""> 
-
+ <!-- <label for="">  -->
+<div class="form-group">
 {{Form::label($name)}}
 {{Form::text($name, $value, $attributes)}}
-
- </label> 
+</div>
+ <!-- </label>  -->

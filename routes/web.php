@@ -48,3 +48,8 @@ Route::get('/chores/create', 'ChoreController@create');
 Route::resource('/chores', 'ChoreController');
 
 Route::get('/calendars', 'CalendarController@calendar');
+
+Route::get('/contacts', 'ContactController@index');
+// Route::resource('contacts', 'ContactController');
+Route::get('/contacts/createcontact', 'ContactController@create');
+Route::post('/contacts/store', 'ContactController@store');
