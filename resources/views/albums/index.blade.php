@@ -8,7 +8,7 @@
 ?>
 <div class="container">
   <div class="row text-center">
-    <h1>Photo Albums &nbsp; <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#addModal">
+    <h1>Photo Albums &nbsp; <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#addModal">
   Add Album
 </button></h1>
     </div>
@@ -74,12 +74,12 @@
         </div>
         
         <div class="row">
-        {{Form::submit('Create Album', ['class' => 'btn btn-primary pull-right'])}}
+        {{Form::submit('Create Album', ['class' => 'btn btn-success pull-right'])}}
         
     </form>    
     {!! Form::close() !!}
 
-                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+                        <button type="button" id="closeAlb" class="btn btn-info pull-right" data-dismiss="modal">Close</button>
                         </div>
 
       </div>

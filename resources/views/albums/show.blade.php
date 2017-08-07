@@ -3,7 +3,7 @@
 @section('content')
 <h1>{{$album->name}}</h1>
 <a class="btn btn-info" href="/albums">Back To Albums</a>
-<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#addModal">
+<button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#addModal">
   Add Photo
 </button>
 <hr>
@@ -69,12 +69,12 @@
         {{Form::file('photo')}}
         </div>
         <div class="row">
-        {{Form::submit('Add Photo', ['class' => 'btn btn-primary pull-right'])}}
+        {{Form::submit('Add Photo', ['class' => 'btn btn-success pull-right'])}}
         
     </form>    
     {!! Form::close() !!}
 
-                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+                        <button type="button" id="closeAlb" class="btn btn-info pull-right" data-dismiss="modal">Close</button>
                         </div>
 
       </div>

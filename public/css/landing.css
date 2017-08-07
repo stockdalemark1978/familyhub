@@ -1,6 +1,7 @@
 html,
 body,
-body
+
+
 .cover {
     height: 100%;
 }
@@ -12,7 +13,10 @@ body
     width: 100%;
     padding: 0 20%;
     box-shadow: inset 0 0 100px #000;
+    
 }
+
+
 
 .cover-text {
     text-align: center;
@@ -20,29 +24,40 @@ body
     display: table-cell;
     vertical-align: middle;
      z-index:10;
+     
 }
 
 .cover-text h1 {
     margin: 0;
-    font-size: 70px;
-    letter-spacing: -3px;
+    font-size: 100px;
+    
    
 }
 
-nav.navbar-inverse {
-     background: rgba(0, 0, 0, 0.2); 
-     /* background-color: transparent;
-    background: transparent; */
+
+
+/* nav.navbar-inverse {
+     background: rgba(43,62,80, 0.7); 
+      background-color: transparent;
+    background: transparent; 
     border-color: transparent; 
     border: none;
-}
+} */
 
 .navbar li a{
     color: black;
 }
 
 .navbar-default{
-    background: #48ab43;
+    background: #4e5d6c;
+
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+       background-color: #bb1e2c;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #bb1e2c;;
 }
 
 .logo {
@@ -55,9 +70,11 @@ nav.navbar-inverse {
 }
 
 .navbar-brand {
-    padding: 5px 15px;
+    padding: 0px 15px;
     -webkit-animation-duration: 1s;
 }
+
+
 
 .navbar-inverse .navbar-nav>li>a {
     color: white;
@@ -75,24 +92,29 @@ nav.navbar-inverse {
     /* box-shadow: 0 0 1px grey; */
 }
 
+.form-control {
+    
+    background-color: #ebebeb;
+}
 
 
-h1, h2, h3, h4, h5, h6 {
+
+ h1, h2, h3, h4, h5, h6 {
     font-family: 'Arvo', Georgia, Times, serif;
 }
-p, div {
+/* p, div {
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-}
+}  */
 
 
 
-h2 {
+/* h2 {
     text-align: center;
     font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
     margin: 0px;
-}
+} */
 
 #why {
     margin: 0px;
@@ -102,7 +124,7 @@ h2 {
 #calendar {
     margin: 0px;
     padding: 50px 0px;
-    background: #83dce0;
+    background: #4e5d6c;
 }
 #photos {
     margin: 0px;
@@ -112,17 +134,102 @@ h2 {
 #lists {
     margin: 0px;
     padding: 50px 0px;
-    background: #83dce0;
+    background: #4e5d6c;
 }
 
 #app-navbar-collapse {
-    background: #48ab43 !important;
+    background: #4e5d6c !important;
 }
+
+
 
 #navlogo {
     margin-bottom: 10px;
 }
 
+#coverText {
+    color: #c73733;
+    border: width border-style color;
+    text-shadow:
+		-1px -1px 0 #2b3e50,
+		1px -1px 0 #2b3e50,
+		-1px 1px 0 #2b3e50,
+		1px 1px 0 #2b3e50;
+}
+
+
+ @media screen and (min-width:761px){
+      
+   .cover-text h1 {
+    margin: 0;
+    font-size: 75px;
+}
+
+    }
+
+    @media screen and (max-width:760px){
+        
+     .cover-text h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+    
+    }
+
+    @media screen and (max-width:480px){
+        
+     .cover-text h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+    
+    }
+
+    @media screen and (max-width:360px){
+         
+   .cover-text h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+
+
+
+
+ @media screen and (min-width:761px){
+      
+  .cover {
+     width: 75%;
+
+    }
+
+    @media screen and (max-width:760px){
+        
+     .cover {
+     width: 75%;
+}
+
+    
+    }
+
+    @media screen and (max-width:480px){
+        
+     .cover {
+     width: 50%;
+}
+
+    
+    }
+
+    @media screen and (max-width:360px){
+         
+    .cover {
+     width: 50%;
+}
+
+    
 /* #albums {
     display: flex;
 } */
@@ -138,57 +245,6 @@ h2 {
     font-family: 'Scope One', serif;
 } */
 
-@media only screen and (max-width: 800px) {
-	
-	/* Force table to not be like tables anymore */
-	#no-more-tables table, 
-	#no-more-tables thead, 
-	#no-more-tables tbody, 
-	#no-more-tables th, 
-	#no-more-tables td, 
-	#no-more-tables tr { 
-		display: block; 
-	}
- 
-	/* Hide table headers (but not display: none;, for accessibility) */
-	#no-more-tables thead tr { 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
- 
-	#no-more-tables tr { border: 1px solid #ccc; }
- 
-	#no-more-tables td { 
-		/* Behave  like a "row" */
-		border: none;
-		border-bottom: 1px solid #eee; 
-		position: relative;
-		padding-left: 50%; 
-		padding-bottom: 10%; 
-		white-space: normal;
-		text-align:left;
-	}
- 
-	#no-more-tables td:before { 
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
-		white-space: nowrap;
-		text-align:left;
-		font-weight: bold;
-	}
- 
-	/*
-	Label the data
-	*/
-	#no-more-tables td:before { content: attr(data-title); }
-}
-    
 
 
 

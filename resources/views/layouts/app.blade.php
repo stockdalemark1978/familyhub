@@ -11,14 +11,14 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-     <link href="{{ asset('css/app.css') }}" rel="stylesheet"> 
+     <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet">  -->
      <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet"> 
     
 
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
      <!-- <link href="{{ asset('assets/css/gsdk.css') }}" rel="stylesheet"> -->
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+     <link href="{{ asset('css/main.css') }}" rel="stylesheet"> 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/00ed1df00a.js"></script>
     

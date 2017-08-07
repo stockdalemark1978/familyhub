@@ -21,7 +21,10 @@
      <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <script src="https://use.fontawesome.com/00ed1df00a.js"></script>
-    <link href="css/style.css" rel="stylesheet">
+     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet"> 
+           <!-- <link href="css/aos.css" rel="stylesheet">   -->
+           <link href="css/landing.css" rel="stylesheet">  
+
 </head>
 
 <body>
@@ -57,9 +60,15 @@
     </nav>
 
 
+
+    
+
+
     <div class="cover">
+        
         <div class="cover-text">
-            <h1>Welcome to <img src="../img/Familyhublogo2.png" alt="logo"></h1>
+            <h1>Welcome to</h1><br>
+            <h1 id="coverText">FamilyHub</h1>
             <p class="lead">Keeping families organized and on the same page .</p>
             <a href="{{ route('register') }}" role="button" class="btn btn-danger btn-lg">Get Started!</a>
         </div>
@@ -77,10 +86,10 @@
 </section> -->
 
     <section id="calendar">
-        <div class="container">
+        <div data-aos="slide-right" class="container">
             <div class="row">
                 <div class="col-sm-8">
-                    <h3>Family Calendar</h3>
+                    <h2>Family Calendar</h2>
                     <p>Keep your family on the same page with a family calendar. Now everyone in the family will know when Jimmy's soccer game is, when mom's hair day is, and when little Susie next door has her birthday party.</p>
                 </div>
                 <div class="col-sm-4">
@@ -92,14 +101,14 @@
 
 
     <section id="photos">
-        <div class="container">
+        <div data-aos="slide-left" class="container">
             <div class="row">
                 <div class="col-sm-4">
                     <img src="../img/photos.jpg" width="300px" alt="">
                 </div>
                 <div class="col-sm-8">
                     
-                    <h3>Share Photos</h3>
+                    <h2>Share Photos</h2>
                     <p>Keep your family on the same page with a family calendar. Now everyone in the family will know when Jimmy's soccer game is, when mom's hair day is, and when little Susie next door has her birthday party.</p>
                 </div>
             </div>
@@ -107,10 +116,10 @@
     </section>
 
     <section id="lists">
-        <div class="container">
+        <div data-aos="slide-right" class="container">
             <div class="row">
                 <div class="col-sm-8">
-                    <h3>Family Lists</h3>
+                    <h2>Family Lists</h2>
                     <p>Grocery lists, chores lists, shopping lists...every family uses lists. Now you can make sure everyone in the family knows what needs to be done.</p>
                     
                 </div>
@@ -122,6 +131,27 @@
         </div>
     </section>
 
+       <section id="photos">
+        <div data-aos="slide-left" class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="../img/contacts.jpg" width="300px" alt="">
+                </div>
+                <div class="col-sm-8">
+                    
+                    <h2>Family Contacts</h2>
+                    <p>Keep track of all the important people to your family. Anyone who the family chooses can be added to the family contacts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+<!-- <script src="../assets/js/aos.js"></script>
+<script>
+    AOS.init();
+  </script> -->
 </body>
 
 </html>
