@@ -13,6 +13,9 @@ class AlbumController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
+
+
     public function index()
     {
         $albums = Album::with('Photos')->get();
@@ -73,8 +76,9 @@ class AlbumController extends Controller
      */
     public function show($id)
     {
+        $album_id = $id;
         $album = Album::with('Photos')->find($id);
-        return view('albums.show')->with('album', $album);
+        return view('albums.show', compact('album_id'))->with('album', $album);
     }
 
     /**

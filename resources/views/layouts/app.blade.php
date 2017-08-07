@@ -12,6 +12,11 @@
 
     <!-- Styles -->
      <link href="{{ asset('css/app.css') }}" rel="stylesheet"> 
+     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet"> 
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
      <!-- <link href="{{ asset('assets/css/gsdk.css') }}" rel="stylesheet"> -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet">
@@ -53,6 +58,19 @@
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
+                            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hub <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/home">Dashboard</a></li>
+                                <li><a href="/albums">Albums</a></li>
+                                <li><a href="/calendars">Calendar</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="/contacts">Contacts</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="/groceries">Groceries</a></li>
+                                <li><a href="/chores">Chores</a></li>
+                            </ul>
+                            </li>
                              <li>
                                 <a href="/albums/create">Create Photo Album</a>
                             </li>

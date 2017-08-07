@@ -112,6 +112,7 @@ class ContactController extends Controller
         $contact->save();
 
         return redirect('/contacts')->with('success', 'Contact Updated');
+        
     }
 
     /**

@@ -21,7 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 
-Route::resource('/lists', 'ListController');
+// Route::resource('/lists', 'ListController');
 
 
 
@@ -35,10 +35,10 @@ Route::get('/photos/{id}', 'PhotoController@show');
 Route::post('/photos/store', 'PhotoController@store');
 Route::delete('/photos/{id}', 'PhotoController@destroy');
 
-Route::get('/groceries', 'GroceryController@index');
-Route::get('/groceries/create', 'GroceryController@create');
+// Route::get('/groceries', 'GroceryController@index');
+// Route::get('/groceries/create', 'GroceryController@create');
 // Route::post('/groceries/store', 'GroceryController@store');
-Route::resource('/groceries', 'GroceryController');
+Route::resource('groceries', 'GroceryController');
 // Route::get('/albums/create', 'AlbumController@create');
 // Route::get('/albums/{id}', 'AlbumController@show');
 // Route::post('/albums/store', 'AlbumController@store');
@@ -50,9 +50,9 @@ Route::resource('/chores', 'ChoreController');
 Route::get('/calendars', 'CalendarController@calendar');
 
 Route::get('/contacts', 'ContactController@index');
-// Route::resource('/contacts', 'ContactController');
+Route::resource('/contacts', 'ContactController');
 Route::get('/contacts/createcontact', 'ContactController@create');
 Route::post('/contacts/store', 'ContactController@store');
-Route::get('/contacts/{contacts}/edit', 'ContactController@edit');
+// Route::get('/contacts/{contacts}/edit', 'ContactController@edit');
 Route::put('/contacts/{contacts}/edit', 'ContactController@update');
 Route::delete('/contacts/{contact}', 'ContactController@destroy');
