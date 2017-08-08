@@ -40,8 +40,8 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="../img/navlogo2.png" alt="logo" width="150" id="navlogo"></a>
+                    <a class="navbar-brand" href="{{ url('/') }}" id="navlogo">
+                        <img src="/img/navlogo2.png" alt="logo" width="150" ></a>
                     </a>
                 </div>
 

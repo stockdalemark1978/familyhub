@@ -17,7 +17,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
      <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <script src="https://use.fontawesome.com/00ed1df00a.js"></script>
@@ -93,7 +93,7 @@
                     <p>Keep your family on the same page with a family calendar. Now everyone in the family will know when Jimmy's soccer game is, when mom's hair day is, and when little Susie next door has her birthday party.</p>
                 </div>
                 <div class="col-sm-4">
-                    <img src="../img/calendar.jpg" width="300px" alt="">
+                    <img src="../img/calendarIcon.png" width="300px" alt="">
                 </div>
             </div>
         </div>
@@ -104,7 +104,7 @@
         <div data-aos="slide-left" class="container">
             <div class="row">
                 <div class="col-sm-4">
-                    <img src="../img/photos.jpg" width="300px" alt="">
+                    <img src="../img/cameraIcon.png" width="300px" alt="">
                 </div>
                 <div class="col-sm-8">
                     
@@ -124,7 +124,7 @@
                     
                 </div>
                 <div class="col-sm-4">
-                    <img src="../img/list.jpg" width="300px" alt="">
+                    <img src="../img/listsicon.png" width="300px" alt="">
                     
                 </div>
             </div>
@@ -135,7 +135,7 @@
         <div data-aos="slide-left" class="container">
             <div class="row">
                 <div class="col-sm-4">
-                    <img src="../img/contacts.jpg" width="300px" alt="">
+                    <img src="../img/contactsIcon.png" width="300px" alt="">
                 </div>
                 <div class="col-sm-8">
                     

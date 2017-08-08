@@ -125,6 +125,8 @@ h5 {
     margin: 0;
 }
 
+
+
 .card {
     font-size: 1em;
     overflow: hidden;
@@ -142,12 +144,19 @@ h5 {
     border: none;
     border-top: 1px solid rgba(34, 36, 38, .1);
     box-shadow: none;
+    background: #3699a3;
+}
+
+.card-block a:hover {
+    text-decoration: none;
+    /* color: rgba(0, 0, 0, .87); */
 }
 
 .card-img-top {
     display: block;
     width: 100%;
     height: auto;
+    
 }
 
 .card-title {
@@ -155,6 +164,11 @@ h5 {
     font-weight: 700;
     line-height: 1.2857em;
     text-align: center;
+}
+a:hover {
+    text-decoration: none;
+    color: #d9534f;
+    /* color: rgba(0, 0, 0, .87); */
 }
 
 .card-text {
@@ -256,3 +270,7 @@ h5 {
     margin: 0 auto;
 }
 
+a#navlogo {
+    text-decoration: none;
+    background-color: transparent !important;
+}
