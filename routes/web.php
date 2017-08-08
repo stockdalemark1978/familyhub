@@ -29,6 +29,8 @@ Route::get('/albums', 'AlbumController@index');
 Route::get('/albums/create', 'AlbumController@create');
 Route::get('/albums/{id}', 'AlbumController@show');
 Route::post('/albums/store', 'AlbumController@store');
+Route::delete('/albums/{id}', 'AlbumController@destroy');
+Route::resource('albums', 'AlbumController');
 
 Route::get('/photos/create/{id}', 'PhotoController@create');
 Route::get('/photos/{id}', 'PhotoController@show');
@@ -43,9 +45,11 @@ Route::resource('groceries', 'GroceryController');
 // Route::get('/albums/{id}', 'AlbumController@show');
 // Route::post('/albums/store', 'AlbumController@store');
 
-Route::get('/chores', 'ChoreController@index');
-Route::get('/chores/create', 'ChoreController@create');
+// Route::get('/chores', 'ChoreController@index');
+// Route::get('/chores/create', 'ChoreController@create');
 Route::resource('/chores', 'ChoreController');
+// Route::delete('/chores/{id}', 'ChoreController@destroy');
+
 
 Route::get('/calendars', 'CalendarController@calendar');
 

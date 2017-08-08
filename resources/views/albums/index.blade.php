@@ -22,6 +22,14 @@
                 </a>
                
                <h4>{{$album->name}}</h4>
+
+
+                  <!-- This delete currently doesn't work
+                 {!!Form::open(['action' => ['AlbumController@destroy', $album->id], 'method' => 'POST'])!!}
+        {{Form::hidden('_method', 'DELETE')}}
+        {{Form::submit('Delete Album', ['class' => 'btn btn-danger'])}} -->
+
+    {!!Form::close()!!}
           @else
             <div class="col-sm-4">
               <a href="/albums/{{$album->id}}">
@@ -40,7 +48,9 @@
       </div>
     </div>
   @else
+    
     <p>No Albums To Display</p>
+    <a class="btn btn-success" href="/albums/create">Create Album</a>
   @endif
 
 @endsection

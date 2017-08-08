@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use App\Album;
 use Session;
 
@@ -13,7 +14,10 @@ class AlbumController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    
+      public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
 
     public function index()
@@ -112,6 +116,12 @@ class AlbumController extends Controller
      */
     public function destroy($id)
     {
-        //
+        //this currently doesn't work...need to figure out
+    //     $album = Album::find($id);
+    //     if(Storage::delete('album_covers/'.$album->album)){
+    //         $album->delete();
+
+    // return redirect('/albums')->with('success', 'Album Deleted');
+    //  }
     }
 }

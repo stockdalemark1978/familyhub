@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'FamilyHub') }}</title>
 
     <!-- Styles -->
      <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet">  -->
@@ -41,7 +41,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="../img/Familyhubnavbarlogo.png" alt="logo" width="150" id="navlogo"></a>
+                        <img src="../img/navlogo2.png" alt="logo" width="150" id="navlogo"></a>
                     </a>
                 </div>
 
@@ -64,16 +64,14 @@
                                 <li><a href="/home">Dashboard</a></li>
                                 <li><a href="/albums">Albums</a></li>
                                 <li><a href="/calendars">Calendar</a></li>
-                                <li role="separator" class="divider"></li>
+                                <!-- <li role="separator" class="divider"></li> -->
                                 <li><a href="/contacts">Contacts</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="/groceries">Groceries</a></li>
                                 <li><a href="/chores">Chores</a></li>
                             </ul>
                             </li>
-                             <li>
-                                <a href="/albums/create">Create Photo Album</a>
-                            </li>
+                            
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>

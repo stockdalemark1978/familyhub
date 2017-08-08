@@ -5,7 +5,7 @@
 <div class="container" ng-app="app" ng-controller="Controller">
 
 <div class="row">
-    <div class="col-sm-4" ng-repeat="user in users">
+    <div class="col-sm-6 col-sm-offset-3"  ng-repeat="user in users">
   <!-- <form style="margin-bottom: 20px;" method="get" action="/groceries/create">
     <button class="btn btn-success btn-xs" type="submit">Add</button>
   </form> -->
@@ -30,7 +30,7 @@
           <option ng-repeat="priority in priorities" value="[[ priority.id ]]">[[ priority.name]]</option>
         </select> -->
 
-        <button type="submit" class="btn btn-success btn-xs"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+        <button type="submit" class="btn btn-success btn-sm"><i class="fa fa-plus" aria-hidden="true"></i></button>
       </form>
 
     </div>
@@ -43,7 +43,7 @@
         <form method="post" action="[[ grocery.action ]]">
             {{ csrf_field() }}
             {{ method_field('DELETE')}}
-            <button class="btn btn-danger btn-xs pull-right" type="submit">Delete</button>
+            <button class="btn btn-primary btn-xs pull-right" type="submit"><i class="fa fa-trash" aria-hidden="true"></i></button>
         </form>
         <!-- <form method="get" action="[[ grocery.action ]]">
             <button style="margin-right: 10px;" class="btn btn-warning btn-xs pull-right" type="submit">Edit</button>

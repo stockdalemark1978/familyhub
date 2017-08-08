@@ -12,6 +12,11 @@ class ChoreController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+      public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $users = \App\User::all();
@@ -90,6 +95,8 @@ class ChoreController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $chore = \App\Chore::find($id);
+        $chore->delete();
+        return redirect('/chores');
     }
 }

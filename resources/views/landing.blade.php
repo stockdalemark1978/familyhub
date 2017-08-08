@@ -37,7 +37,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand animated fadeInDownBig" href="#"><img src="../img/Familyhubnavbarlogo.png" alt="logo" width="150" id="navlogo"></a>
+            <a class="navbar-brand animated fadeInDownBig" href="#"><img src="../img/navlogo2.png" alt="logo" width="150" id="navlogo"></a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
             <!-- <ul class="nav navbar-nav">
@@ -48,7 +48,7 @@
             @if (Route::has('login'))
             <ul class="nav navbar-nav navbar-right">
                 @if (Auth::check())
-                    <li><a href="{{ url('/home') }}">Home</a></li>
+                    <li><a href="{{ url('/home') }}">Dashboard</a></li>
                 @else
                     <li><a href="{{ route('login') }}">Login <i class="fa fa-user"></i></a></li>
                     <li><a href="{{ route('register') }}">Register <i class="fa fa-user-plus"></i></a></li>
@@ -147,7 +147,9 @@
     </section>
 
 
-    
+     <!-- <footer>
+        crafted with &hearts; and &coffee; in Lexington by Mark Stockdale</a>
+    </footer> -->
 <!-- <script src="../assets/js/aos.js"></script>
 <script>
     AOS.init();

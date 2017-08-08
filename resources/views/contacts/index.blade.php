@@ -5,8 +5,8 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Family Contacts<span class="pull-right"><button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#addModal">
-  Add Contact
+                <div class="panel-heading">Family Contacts<span class="pull-right"><button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#addModal"><i class="fa fa-plus"></i>
+ 
 </button></div>
                 @if(count($contacts))
                     <div class="panel-body">
@@ -32,13 +32,16 @@
                             <td data-title="Phone">{{$contact->phone}}</td>
                             <td data-title="Address">{{$contact->address}}</td>
                             <td data-title="Notes">{{$contact->notes}}</td>
-                            <td data-title="Edit"><a class="btn btn-info btn-xs pull-right" href="/contacts/{{$contact->id}}/edit">Edit</a></td>
+                            <td data-title="Edit"><a class="btn btn-info btn-xs pull-right" href="/contacts/{{$contact->id}}/edit"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
 
                             
                             <td data-title="Delete">
                              {!!Form::open(['action' => ['ContactController@destroy', $contact->id],'method' => 'POST', 'class' => 'pull-right', 'onsubmit' => 'return confirm("Are you sure you want to delete this contact?")'])!!}
                         
-                            {{Form::hidden('_method', 'DELETE')}} {{Form::submit('Delete', ['class' => 'btn btn-primary btn-xs'])}}
+                            {{Form::hidden('_method', 'DELETE')}} {{ Form::button('<i class="fa fa-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-primary btn-xs'] ) }}
+
+                            
+
                             
                         
                         {!! Form::close() !!}
@@ -90,12 +93,12 @@
                             </div>
                            
                             <div class="row">
-                            {{Form::submit('Add Contact', ['class' => 'btn btn-primary pull-right'])}}
+                            {{Form::submit('Add Contact', ['class' => 'btn btn-success pull-right'])}}
                             
                         </form>    
                         {!! Form::close() !!}
 
-                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+                        <button type="button"id="closeCont" class="btn btn-info pull-right" data-dismiss="modal">Close</button>
                         </div>
 
       </div>
@@ -143,7 +146,7 @@
                         </form>    
                         {!! Form::close() !!}
 
-                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-info pull-right" data-dismiss="modal">Close</button>
                         </div>
 
       </div>
@@ -154,47 +157,7 @@
 
 @endforeach
 
-<div class="modal fade" tabindex="-1" role="dialog" id="editModal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        
-        <h4 class="modal-title">Edit Contact</h4>
-      </div>
-      <div class="modal-body">
-         {!!Form::open(['action' => ['ContactController@update', $contact->id], 'method' => 'POST'])!!}
-                        <form>
-                            <div class="form-group">
-                            {{Form::text('name',$contact->name,['placeholder' => 'Name','class' => 'form-control'])}}
-                            </div>
-                            <div class="form-group">
-                            {{Form::text('email',$contact->email,['placeholder' => 'Email','class' => 'form-control'])}}
-                            </div>
-                            <div class="form-group">
-                            {{Form::text('phone',$contact->phone,['placeholder' => 'Phone','class' => 'form-control'])}}
-                            </div>
-                            <div class="form-group">
-                            {{Form::text('address',$contact->address,['placeholder' => 'Address','class' => 'form-control'])}}
-                            </div>
-                            <div class="form-group">
-                            {{Form::textarea('notes',$contact->notes,['placeholder' => 'Notes', 'class' => 'form-control'])}}
-                            </div>
-                           
-                            {{Form::hidden('_method', 'PUT')}}
-                            <div class="row">
-                            {{Form::submit('Update Contact', ['class' => 'btn btn-primary pull-right'])}}
-                            
-                        </form>    
-                        {!! Form::close() !!}
 
-                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
-                        </div>
-
-      </div>
-      
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 
 
 

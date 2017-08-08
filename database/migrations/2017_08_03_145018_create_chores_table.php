@@ -15,7 +15,7 @@ class CreateChoresTable extends Migration
     {
         Schema::create('chores', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('name')->nullable();
             $table->text('description')->nullable();
             // $table->boolean('completed')->default(0);
             $table->timestamps();

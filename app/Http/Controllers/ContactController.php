@@ -11,12 +11,17 @@ class ContactController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+      public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         // $user_id = auth()->user()->id;
         $contacts = \App\Contact::all();
         $contacts = Contact::orderBy('name', 'asc')->get();
-        return view('contacts.index')->with('contacts', $contacts);;
+        return view('contacts.index')->with('contacts', $contacts);
     }
 
     /**
