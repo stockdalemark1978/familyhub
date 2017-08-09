@@ -23,6 +23,7 @@
     <script src="https://use.fontawesome.com/00ed1df00a.js"></script>
     
     
+    
 
 </head>
 <body>
@@ -98,12 +99,15 @@
             </div>
         </nav>
         <div class="container">
+            
+            
         @include('inc.messages')
         @yield('content')
         </div>
     </div>
 
     <!-- Scripts -->
+    
     <script src="{{ asset('js/app.js') }}"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>

@@ -7,6 +7,7 @@
   	  $i = 1;
 ?>
 <div class="container">
+  <a href="/home"><p><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Return To Dashboard</p></a>
   <div class="panel panel-default">
                 <div class="panel-heading">Photo Albums<span class="pull-right"><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-plus"></i>
  
@@ -87,7 +88,7 @@
         </div>
         
         <div class="row">
-        {{Form::button('Create Album', ['class' => 'btn btn-success pull-right'])}}
+        {{Form::submit('Create Album', ['class' => 'btn btn-success pull-right'])}}
         
     </form>    
     {!! Form::close() !!}

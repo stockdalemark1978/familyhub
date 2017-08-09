@@ -50,13 +50,17 @@ class GroceryController extends Controller
      */
     public function store(Request $request)
     {
+
+        $this->validate($request, [
+            'name' => 'required',
+        ]);
         $grocery = new \App\Grocery;
         $grocery['name'] = $request->name;
         // $grocery['user_id'] = $request->id;
         // $grocery['completed'] = $request->completed;
         $grocery->save();
 
-        return redirect('/groceries');
+        return redirect('/groceries')->with('success', 'Grocery Item Added To List');
     }
 
     /**

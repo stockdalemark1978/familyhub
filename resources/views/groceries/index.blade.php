@@ -3,6 +3,7 @@
 @section('content')
 
 <div class="container" ng-app="app" ng-controller="Controller">
+  <a href="/home"><p><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Return To Dashboard</p></a>
 
 <div class="row">
     <div class="col-sm-6 col-sm-offset-3"  ng-repeat="user in users">
@@ -67,10 +68,7 @@
 
     $scope.groceries = {!! $groceries !!};
     $scope.users = {!! $users !!};
-
-   
   
-
   }
   angular
     .module('app', [], function($interpolateProvider) {

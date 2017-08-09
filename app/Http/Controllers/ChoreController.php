@@ -45,12 +45,17 @@ class ChoreController extends Controller
      */
     public function store(Request $request)
     {
+         $this->validate($request, [
+            'name' => 'required',
+            
+        ]);
+
         $chore = new \App\Chore;
         $chore['name'] = $request->name;
         // $grocery['user_id'] = $request->id;
         // $grocery['completed'] = $request->completed;
         $chore->save();
-        return redirect('/chores');
+        return redirect('/chores')->with('success', 'Chore Added To List'); ;
     }
 
     /**
