@@ -12,6 +12,7 @@
 
     <!-- Styles -->
      <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet">  -->
+     <script src="https://use.fontawesome.com/00ed1df00a.js"></script>
      <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet"> 
     
 
@@ -20,7 +21,7 @@
      <!-- <link href="{{ asset('assets/css/gsdk.css') }}" rel="stylesheet"> -->
      <link href="{{ asset('css/main.css') }}" rel="stylesheet"> 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet">
-    <script src="https://use.fontawesome.com/00ed1df00a.js"></script>
+    
     
     
     
@@ -60,7 +61,7 @@
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
                             <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hub <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hub<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/home">Dashboard</a></li>
                                 <li><a href="/albums">Albums</a></li>
@@ -99,6 +100,7 @@
             </div>
         </nav>
         <div class="container">
+        
             
             
         @include('inc.messages')
@@ -107,11 +109,12 @@
     </div>
 
     <!-- Scripts -->
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+       
         
         
 </body>

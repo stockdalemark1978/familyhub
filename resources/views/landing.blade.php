@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>FamilyHub</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,6 +13,10 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
+        <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
@@ -39,13 +43,14 @@
             </button>
             <a class="navbar-brand animated fadeInDownBig" href="#"><img src="../img/navlogo2.png" alt="logo" width="150" id="navlogo"></a>
             </div>
-            <div id="navbar" class="collapse navbar-collapse">
+           
             <!-- <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul> -->
             @if (Route::has('login'))
+             <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 @if (Auth::check())
                     <li><a href="{{ url('/home') }}">Dashboard</a></li>
@@ -58,7 +63,6 @@
             </div>
         </div>
     </nav>
-
 
 
     
@@ -88,12 +92,12 @@
     <section id="calendar">
         <div data-aos="slide-right" class="container">
             <div class="row">
-                <div class="col-sm-8">
+                <div class="col-lg-8 col-sm-6">
                     <h2>Family Calendar</h2>
-                    <p>Keep your family on the same page with a family calendar. Now everyone in the family will know when Jimmy's soccer game is, when mom's hair day is, and when little Susie next door has her birthday party.</p>
+                    <p class="landText">Keep your family on the same page with a family calendar. Now everyone in the family will know when Jimmy's soccer game is, when mom's hair day is, and when little Susie next door has her birthday party.</p>
                 </div>
-                <div class="col-sm-4">
-                    <img src="../img/calendarIcon.png" width="300px" alt="">
+                <div class="col-lg-4 col-sm-6">
+                    <img class="pull-right"src="../img/calendarIcon.png" width="300px" alt="">
                 </div>
             </div>
         </div>
@@ -103,13 +107,13 @@
     <section id="photos">
         <div data-aos="slide-left" class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-lg-4 col-sm-6">
                     <img src="../img/cameraIcon.png" width="300px" alt="">
                 </div>
-                <div class="col-sm-8">
+                <div class="col-lg-8 col-sm-6">
                     
                     <h2>Share Photos</h2>
-                    <p>Keep your family on the same page with a family calendar. Now everyone in the family will know when Jimmy's soccer game is, when mom's hair day is, and when little Susie next door has her birthday party.</p>
+                    <p class="landText">All family events have one thing in common: photos. FamilyHub lets you organize all of your family photos in one place in specific photo albums. From your Florida vacation to your cousins wedding, we've got you covered.</p>
                 </div>
             </div>
         </div>
@@ -118,13 +122,13 @@
     <section id="lists">
         <div data-aos="slide-right" class="container">
             <div class="row">
-                <div class="col-sm-8">
+                <div class="col-lg-8 col-sm-6">
                     <h2>Family Lists</h2>
-                    <p>Grocery lists, chores lists, shopping lists...every family uses lists. Now you can make sure everyone in the family knows what needs to be done.</p>
+                    <p class="landText">Grocery lists, chores lists, shopping lists...every family uses lists. Now you can make sure everyone in the family knows what needs to be done.</p>
                     
                 </div>
-                <div class="col-sm-4">
-                    <img src="../img/listsicon.png" width="300px" alt="">
+                <div class="col-lg-4 col-sm-6">
+                    <img class="pull-right" src="../img/listsicon.png" width="300px" alt="">
                     
                 </div>
             </div>
@@ -134,13 +138,13 @@
        <section id="photos">
         <div data-aos="slide-left" class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-lg-4 col-sm-6">
                     <img src="../img/contactsIcon.png" width="300px" alt="">
                 </div>
-                <div class="col-sm-8">
+                <div class="col-lg-8 col-sm-6">
                     
                     <h2>Family Contacts</h2>
-                    <p>Keep track of all the important people to your family. Anyone who the family chooses can be added to the family contacts.</p>
+                    <p class="landText">Keep track of all the important people to your family. Anyone who the family chooses can be added to the family contacts.</p>
                 </div>
             </div>
         </div>
@@ -154,6 +158,7 @@
 <script>
     AOS.init();
   </script> -->
+  
 </body>
 
 </html>

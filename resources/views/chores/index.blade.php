@@ -21,7 +21,7 @@
         {{ csrf_field() }}
         <div class="form-group">
           <label for="name">Name</label>
-          <input ng-model="choreName" type="text" class="form-control" id="name" name="name" placeholder="chore Item">
+          <input ng-model="choreName" type="text" class="form-control" id="name" name="name" placeholder="chore Item" >
         </div>
         <!-- <div class="form-group">
           <label for="content">Idea</label>
@@ -40,7 +40,7 @@
 
   <div class="panel panel-default" ng-repeat="chore in chores">
     <div class="panel-heading clearfix">
-        <h3 class="panel-title pull-left">[[ chore.name ]]</h3>
+        <h3 class="panel-title pull-left" ng-cloak>[[ chore.name ]]</h3>
         <form method="post" action="[[ chore.action ]]">
             {{ csrf_field() }}
             {{ method_field('DELETE')}}

@@ -61,7 +61,7 @@
               <div class="panel panel-default">
  <div class="row mb-5">
             <a href="/groceries" >
-            <div class="col-sm-6 col-md-4 col-lg-4 mt-4 col-md-offset-2 col-sm-offset-3 col-lg-offset-2">
+            <div class="col-sm-6 col-md-4 col-lg-4 mt-4 col-md-offset-2  col-lg-offset-2">
                 <div class="card card-inverse card-info">
                     <img class="card-img-top" src="../img/groceryList.png">
                     
@@ -76,7 +76,7 @@
             </a>
 
             <a href="/chores" >
-            <div class="col-sm-6 col-md-4 col-lg-4 mt-4">
+            <div class="col-sm-6 col-md-4 col-lg-4 mt-4 ">
                 <div class="card card-inverse card-info">
                     <img class="card-img-top" src="../img/listsicon.png">
                     

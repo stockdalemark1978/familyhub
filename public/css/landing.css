@@ -107,6 +107,44 @@ body,
 }  */
 
 
+element.style {
+}
+bootstrap.min.css:11
+p {
+    margin: 0 0 10.5px;
+}
+type.less:64
+p {
+    margin: 0 0 10px;
+}
+bootstrap.min.css:11
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+bootstrap.css:1062
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+body {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    line-height: 1.42857143;
+    color: #ebebeb;
+    background-color: #2b3e50;
+}
 
 /* h2 {
     text-align: center;
@@ -157,6 +195,10 @@ body,
         1px 1px 0 #2b3e50;
     margin-top: -20px;
     
+}
+
+#landText {
+    font-size: 22px;
 }
 
 

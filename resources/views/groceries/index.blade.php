@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container" ng-app="app" ng-controller="Controller">
+<div class="container" ng-app="app" ng-controller="Controller" >
   <a href="/home"><p><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Return To Dashboard</p></a>
 
 <div class="row">
@@ -38,10 +38,10 @@
   </div>
 
 
-  <div class="panel panel-default" ng-repeat="grocery in groceries">
+  <div class="panel panel-default" ng-repeat="grocery in groceries" >
     <div class="panel-heading clearfix">
-        <h3 class="panel-title pull-left">[[ grocery.name ]]</h3>
-        <form method="post" action="[[ grocery.action ]]">
+        <h3 class="panel-title pull-left" ng-cloak>[[ grocery.name ]]</h3>
+        <form method="post" action="[[ grocery.action ]]" >
             {{ csrf_field() }}
             {{ method_field('DELETE')}}
             <button class="btn btn-primary btn-xs pull-right" type="submit"><i class="fa fa-trash" aria-hidden="true"></i></button>
