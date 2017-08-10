@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+
     <a href="/home"><p><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Return To Dashboard</p></a>
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -62,7 +62,7 @@
             </div>
         </div>
     </div>
-</div>
+
 
 <!--Modal-->
 

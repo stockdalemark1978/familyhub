@@ -50,7 +50,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul> -->
             @if (Route::has('login'))
-             <div id="navbar" class="collapse navbar-collapse">
+             <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 @if (Auth::check())
                     <li><a href="{{ url('/home') }}">Dashboard</a></li>
@@ -89,11 +89,11 @@
     </div>
 </section> -->
 
-    <section id="calendar">
+    <section  id="calendar">
         <div data-aos="slide-right" class="container">
             <div class="row">
                 <div class="col-lg-8 col-sm-6">
-                    <h2>Family Calendar</h2>
+                    <h2 >Family Calendar</h2>
                     <p class="landText">Keep your family on the same page with a family calendar. Now everyone in the family will know when Jimmy's soccer game is, when mom's hair day is, and when little Susie next door has her birthday party.</p>
                 </div>
                 <div class="col-lg-4 col-sm-6">
@@ -143,7 +143,7 @@
                 </div>
                 <div class="col-lg-8 col-sm-6">
                     
-                    <h2>Family Contacts</h2>
+                    <h2 class"element-animation">Family Contacts</h2>
                     <p class="landText">Keep track of all the important people to your family. Anyone who the family chooses can be added to the family contacts.</p>
                 </div>
             </div>

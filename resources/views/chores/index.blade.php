@@ -2,11 +2,11 @@
 
 @section('content')
 
-<div class="container" ng-app="app" ng-controller="Controller">
+
   <a href="/home"><p><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Return To Dashboard</p></a>
 
-<div class="row">
-    <div class="col-sm-6 col-sm-offset-3"  ng-repeat="user in users">
+<div class="row" ng-app="app" ng-controller="Controller">
+    <div class="col-sm-6 col-sm-offset-3"  >
   <!-- <form style="margin-bottom: 20px;" method="get" action="/chores/create">
     <button class="btn btn-success btn-xs" type="submit">Add</button>
   </form> -->
@@ -49,7 +49,7 @@
         <!-- <form method="get" action="[[ chore.action ]]">
             <button style="margin-right: 10px;" class="btn btn-warning btn-xs pull-right" type="submit">Edit</button>
         </form>  -->
-        </div>
+    </div>
         <!-- <div class="panel-body">
         [[ chore.content ]]
         <br />
@@ -59,7 +59,7 @@
  
     
 </div>
-</div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 
@@ -67,7 +67,7 @@
   function Controller($scope, $location) {
 
     $scope.chores = {!! $chores !!};
-    $scope.users = {!! $users !!};
+  
   }
   angular
     .module('app', [], function($interpolateProvider) {

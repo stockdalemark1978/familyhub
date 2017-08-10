@@ -2,10 +2,10 @@
 
 @section('content')
 
-<div class="container" ng-app="app" ng-controller="Controller" >
+
   <a href="/home"><p><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Return To Dashboard</p></a>
 
-<div class="row">
+<div class="row" ng-app="app" ng-controller="Controller" >
     <div class="col-sm-6 col-sm-offset-3"  ng-repeat="user in users">
   <!-- <form style="margin-bottom: 20px;" method="get" action="/groceries/create">
     <button class="btn btn-success btn-xs" type="submit">Add</button>
@@ -59,7 +59,7 @@
  
     
 </div>
-</div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 
