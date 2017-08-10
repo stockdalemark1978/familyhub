@@ -116,12 +116,16 @@ class AlbumController extends Controller
      */
     public function destroy($id)
     {
-        //this currently doesn't work...need to figure out
-    //     $album = Album::find($id);
-    //     if(Storage::delete('album_covers/'.$album->album)){
-    //         $album->delete();
+       // this currently doesn't work...need to figure out
+        $album = Album::find($id);
 
-    // return redirect('/albums')->with('success', 'Album Deleted');
+        $album->delete();
+
+        return redirect('/albums')->with('success', 'Album Deleted');
+    //     if(Storage::delete('album_covers/'.$album->album)){
+            
+
+    // 
     //  }
     }
 }

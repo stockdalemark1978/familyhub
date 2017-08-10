@@ -33,7 +33,7 @@
                             <td data-title="Phone">{{$contact->phone}}</td>
                             <td data-title="Address">{{$contact->address}}</td>
                             <td data-title="Notes">{{$contact->notes}}</td>
-                            <td data-title="Edit"><a class="btn btn-info btn-xs pull-right" href="/contacts/{{$contact->id}}/edit"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                            <td data-title="Edit"><a class="btn btn-info btn-xs pull-right albBack" href="/contacts/{{$contact->id}}/edit"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
 
                             
                             <td data-title="Delete">
@@ -41,9 +41,7 @@
                         
                             {{Form::hidden('_method', 'DELETE')}} {{ Form::button('<i class="fa fa-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-primary btn-xs'] ) }}
 
-                            
-
-                            
+                                                       
                         
                         {!! Form::close() !!}
                             </td>

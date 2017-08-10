@@ -13,21 +13,21 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-        <script
-  src="http://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+    <script
+    src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-     <link rel="stylesheet"
+    <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <script src="https://use.fontawesome.com/00ed1df00a.js"></script>
-     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet"> 
+    <script src="https://use.fontawesome.com/00ed1df00a.js"></script>
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet"> 
            <!-- <link href="css/aos.css" rel="stylesheet">   -->
-           <link href="css/landing.css" rel="stylesheet">  
+    <link href="css/landing.css" rel="stylesheet">  
 
 </head>
 
@@ -70,7 +70,7 @@
 
     <div class="cover">
         
-        <div class="cover-text">
+        <div class="cover-text animated fadeInRight">
             <h1>Welcome to</h1><br>
             <h1 id="coverText">FamilyHub</h1>
             <p class="lead">Keeping families organized and on the same page .</p>

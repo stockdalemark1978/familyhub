@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+<a href="/home"><p><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Return To Dashboard</p></a>
+
 <h1>{{$album->name}}</h1>
-<a class="btn btn-info" href="/albums">Back To Albums</a>
+<a class="btn btn-info albBack" href="/albums">Back To Albums</a>
 <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#addModal">
   Add Photo
 </button>
@@ -37,11 +39,13 @@
             </div>
           @endif
         	<?php $i++; ?>
+
         @endforeach
       </div>
     </div>
   @else
     <p>No Photos To Display</p>
+    
 
 
 @endif

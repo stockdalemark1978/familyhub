@@ -17,7 +17,7 @@
         {{Form::file('cover_image')}}
         </div>
         
-        {{Form::submit('Create Album', ['class' => 'btn btn-primary'])}}
+        {{Form::submit('Create Album', ['class' => 'btn btn-success'])}}
         
     </form>    
     {!! Form::close() !!}

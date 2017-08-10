@@ -23,13 +23,7 @@
           <label for="name">Name</label>
           <input ng-model="choreName" type="text" class="form-control" id="name" name="name" placeholder="chore Item" >
         </div>
-        <!-- <div class="form-group">
-          <label for="content">Idea</label>
-          <input type="text" class="form-control" id="content" name="content" placeholder="">
-        </div> -->
-        <!-- <select id="priority_id" name="priority_id">
-          <option ng-repeat="priority in priorities" value="[[ priority.id ]]">[[ priority.name]]</option>
-        </select> -->
+        
 
         <button type="submit" class="btn btn-success btn-sm"><i class="fa fa-plus" aria-hidden="true"></i></button>
       </form>

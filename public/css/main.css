@@ -41,6 +41,17 @@ a:hover {
     background-color: #df691a;
     border-color: transparent;
 }
+
+.btn-info:hover {
+    color: #ffffff;
+    background-color: #31b0d5;
+    border-color: rgba(0,0,0,0);
+}
+.albBack:hover {
+    color: #ffffff;
+    background-color: #31b0d5 !important;
+    border-color: rgba(0,0,0,0);
+}
 .navbar-brand {
     float: left;
      padding: 0px 15px; 

@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Edit Contact<a href="/contacts" class="pull-right btn btn-info btn-xs">Back To Contacts</a></div>
+                <div class="panel-heading">Edit Contact<a href="/contacts" class="pull-right btn btn-info btn-xs albBack">Back To Contacts</a></div>
                     <div class="panel-body">
                         {!!Form::open(['action' => ['ContactController@update', $contact->id], 'method' => 'POST'])!!}
                         <form>
