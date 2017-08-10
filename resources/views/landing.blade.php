@@ -74,7 +74,7 @@
             <h1>Welcome to</h1><br>
             <h1 id="coverText">FamilyHub</h1>
             <p class="lead">Keeping families organized and on the same page .</p>
-            <a href="{{ route('register') }}" role="button" class="btn btn-danger btn-lg">Get Started!</a>
+            <a href="{{ route('register') }}" role="button" class="btn btn-danger btn-lg animated infinite pulse">Get Started!</a>
         </div>
     </div>
 
