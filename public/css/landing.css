@@ -1,0 +1,309 @@
+html,
+body,
+
+
+.cover {
+    height: 100%;
+}
+
+.cover {
+    background: url('../img/Familyhubheader2.jpg') top left no-repeat;
+    background-size: cover;
+    display: table;
+    width: 100%;
+    padding: 0 20%;
+    box-shadow: inset 0 0 100px #000;
+    
+}
+
+
+
+.cover-text {
+    text-align: center;
+    color: black;
+    display: table-cell;
+    vertical-align: middle;
+     z-index:10;
+     
+}
+
+
+h2, .h2 {
+    font-size: 40px;
+}
+
+
+
+.navbar li a{
+    color: black;
+}
+
+.navbar-default{
+    background: #4e5d6c;
+
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+       background-color: #d9534f;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #d9534f;
+}
+
+.logo {
+   position:absolute;
+   width:auto;
+   height:auto;
+   z-index:1;
+   left: 75px;
+   top: 75px;
+}
+
+.navbar-brand {
+    padding: 0px 15px;
+    -webkit-animation-duration: 1s;
+}
+
+
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
+    color: white;
+}
+
+
+.panel {
+    margin-bottom: 1px; 
+    background-color: #fff;
+    border-radius: 4px;
+    /* box-shadow: 0 1px 1px rgba(0,0,0,.05); */
+    /* box-shadow: 0 0 1px grey; */
+}
+
+.form-control {
+    
+    background-color: #ebebeb;
+}
+
+
+
+ h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arvo', Georgia, Times, serif;
+}
+/* p, div {
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+}  */
+
+
+element.style {
+}
+bootstrap.min.css:11
+p {
+    margin: 0 0 10.5px;
+}
+type.less:64
+p {
+    margin: 0 0 10px;
+}
+bootstrap.min.css:11
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+bootstrap.css:1062
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+body {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    line-height: 1.42857143;
+    color: #ebebeb;
+    background-color: #2b3e50;
+}
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
+    font-size: 15px;
+}
+
+#why {
+    margin: 0px;
+    padding: 25px 0px; 
+    background: #c73733;
+}
+#calendar {
+    margin: 0px;
+    padding: 50px 0px;
+    background: #4e5d6c;
+}
+#photos {
+    margin: 0px;
+    padding: 50px 0px;
+    background: #48ab43;
+}
+#lists {
+    margin: 0px;
+    padding: 50px 0px;
+    background: #4e5d6c;
+}
+
+#app-navbar-collapse {
+    background: #4e5d6c !important;
+}
+
+
+
+#navlogo {
+    margin-bottom: 10px;
+}
+
+#coverText {
+    color: #c73733;
+    border: width border-style color;
+    text-shadow:
+		-1px -1px 0 #2b3e50,
+		1px -1px 0 #2b3e50,
+		-1px 1px 0 #2b3e50,
+        1px 1px 0 #2b3e50;
+    margin-top: -20px;
+    
+}
+
+#landText {
+    font-size: 22px;
+}
+
+
+ @media screen and (min-width:761px){
+      
+   .cover-text h1 {
+    margin: 0;
+    font-size: 100px;
+}
+
+    }
+
+    @media screen and (max-width:760px){
+        
+     .cover-text h1 {
+    margin: 0;
+    font-size: 55px;
+}
+
+    
+    }
+
+    @media screen and (max-width:480px){
+        
+     .cover-text h1 {
+    margin: 0;
+    font-size: 45px;
+}
+
+    
+    }
+
+    @media screen and (max-width:360px){
+         
+   .cover-text h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+
+
+
+
+ @media screen and (min-width:761px){
+      
+  .cover {
+     width: 75%;
+
+    }
+
+    @media screen and (max-width:760px){
+        
+     .cover {
+     width: 75%;
+}
+
+    
+    }
+
+    @media screen and (max-width:480px){
+        
+     .cover {
+     width: 50%;
+}
+
+    
+    }
+
+    @media screen and (max-width:360px){
+         
+    .cover {
+     width: 50%;
+}
+
+
+
+/* #albums {
+    display: flex;
+} */
+
+
+
+
+
+
+
+
+
+
+/* {
+    font-family: 'Scope One', serif;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
