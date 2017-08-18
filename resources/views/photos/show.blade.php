@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-    <a href="/albums/{{$photo->album_id}}"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back To Photo Gallery</a>
+    <a href="/albums/{{$photo->album_id}}"><p><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back To Photo Gallery</p></a>
     <h3>{{$photo->title}}</h3>
     <p>{{$photo->description}}</p>
     <hr>
